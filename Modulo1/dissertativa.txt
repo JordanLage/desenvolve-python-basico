@@ -1,0 +1,12 @@
+Dissertativa
+A solução do problema consiste em calcular a multiplicação de 9 por qualquer número 𝑛
+seguindo um método específico para obter os resultados dos dígitos da dezena e da unidade. As regras para determinar esses dígitos são:
+
+Para o primeiro dígito (dezena): 
+digito1 = n − 1
+
+Para o segundo dígito (unidade): 
+digito2 = 10 − n
+
+O resultado final da multiplicação 9 * n é então obtido combinando esses dígitos da seguinte maneira:
+9 × n = digito1 × 10 + digito2
