@@ -1,2 +1,3 @@
 # Modulo1
-Modulo 1 de python - Projeto desenvolve
+Jordan Lage do Carmo - Desenvolve Itabira Programação básica com Python PD292 / 3264
+
