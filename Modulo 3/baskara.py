@@ -24,3 +24,5 @@ elif delta == 0:
 
 else:
     print('Não há raízes reais')
+
+# Utilizei a biblioteca math para poder calcular a raiz 

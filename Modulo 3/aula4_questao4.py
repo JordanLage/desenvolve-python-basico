@@ -1,7 +1,18 @@
-# 4) Você está implementando um sistema de entrega expressa e precisa calcular o valor do frete com base na distância e no peso do pacote.
-#  Escreva um código que solicita a distância da entrega em quilômetros e o peso do pacote em quilogramas.
-#  O programa deve calcular e imprimir o valor do frete de acordo com as seguintes regras:
-# Distância até 100 km: R$1 por kg.
-# Distância entre 101 e 300 km: R$1.50 por kg.
-# Distância acima de 300 km: R$2 por kg.
-# Acrescente uma taxa de R$10 para pacotes com peso superior a 10 kg
+# Entrada de dados
+distancia = float(input('Insira a distância da entrega em km: '))
+peso_pacote = float(input('Insira o peso do pacote em kg: '))
+
+# Calcula o preço base do frete de acordo com a distância
+if distancia <= 100:
+    preco = 1.00 * peso_pacote
+elif 101 <= distancia <= 300:
+    preco = 1.50 * peso_pacote
+else:
+    preco = 2.00 * peso_pacote
+
+# Acrescenta taxa adicional para pacotes com peso superior a 10 kg
+if peso_pacote > 10:
+    preco += 10
+
+# Exibe o valor do frete
+print(f'O valor do frete é: R${preco:.2f}')
