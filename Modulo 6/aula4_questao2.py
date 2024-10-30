@@ -1,16 +1,9 @@
 frase = input("Digite uma frase: ")
 
-vogais = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+vogais = sorted([letra for letra in frase if letra in 'aeiouAEIOU'])
 
-lista_vogais = []
-lista_consoantes = []
+consoantes = [letra for letra in frase if letra.isalpha() and letra.lower() not in 'aeiou']
 
-for letra in frase:
-    if letra in vogais:
-        lista_vogais.append(letra)
-    else:  
-        lista_consoantes.append(letra)
-
-lista_vogais.sort()
-print("Vogais:", lista_vogais)
-print("Consoantes:", lista_consoantes)
+# Exibir resultados
+print("Vogais:", vogais)
+print("Consoantes:", consoantes)
