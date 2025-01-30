@@ -1,3 +1,4 @@
-# Modulo1
-Jordan Lage do Carmo - Desenvolve Itabira Programação básica com Python PD292 / 3264
+# Projeto Desenvolve Itabira
+### Programação básica com Python
+### Jordan Lage do Carmo - PDITA292
 
